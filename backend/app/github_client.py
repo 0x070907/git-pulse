@@ -59,7 +59,7 @@ async def fetch_repos(username : str,
         if not repos:   #If the user exists but has no public repos,just return an empty list
             return []
 
-        return [GitHubRepo(**repo) for repo in repos]
+        return [GitHubRepo(**repo) for repo in repos if repo["visibility"] == "public"]
 
 
 async def fetch_events(username : str, per_page : int = 100,page : int = 1) -> list[GitHubEvent]:
@@ -79,7 +79,7 @@ async def fetch_events(username : str, per_page : int = 100,page : int = 1) -> l
         if not events: 
             return []
 
-        return [GitHubEvent(**event) for event in events]   
+        return [GitHubEvent(**event) for event in events if event["public"]]   
 
 
 async def fetch_all_events(username: str) -> list[GitHubEvent]:
