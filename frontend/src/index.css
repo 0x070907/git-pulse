@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre%20Baskerville');
+@import url('https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono');
+
+
+:root {
+    --serif: 'Libre Baskerville', serif;
+    --mono: 'IBM Plex Mono', monospace;
+
+    /* base colors */
+    --black-1: #090909;
+    --black-2: #0E1416;
+
+    --slate-1: #161B1D;
+    --slate-2: #1F262B;
+    --slate-3: #2B3336;
+
+    --teal-1: #132828;
+    --teal-2: #1D3D41;
+    --teal-3: #2FA6A9;
+    --teal-4: #78D0D3;
+
+    --white-1: #BCEDEF;
+    --white-2: #E6F7F8;
+    --white-3: #F2F4F5;
+
+    /* accent colors*/
+    --accent-primary: #43BEC2;
+    --accent-secondary: #4DD0E1;
+    --accent-tertiary: #A3FFEC;
+
+    --accent-purple: #B36CFF;
+    --accent-gold: #FDD166;
+    --accent-pink: #FF6890;
+
+    /* main page background */
+    --gradient-primary:
+        linear-gradient(
+            135deg,
+            var(--black-1),
+            var(--black-2) 60%
+        );
+
+    /* small decorative cards / chips */
+    --gradient-card:
+        radial-gradient(
+            circle at 20% 20%,
+            var(--teal-1),
+            var(--black-2)
+        );
+
+    /* skeleton loading shimmer */
+    --gradient-loading:
+        linear-gradient(
+            90deg,
+            var(--teal-1) 0%,
+            var(--teal-2) 35%,
+            var(--accent-primary) 50%,
+            var(--teal-2) 65%,
+            var(--teal-1) 100%
+        );
+
+    /* buttons */
+    --gradient-button:
+        linear-gradient(
+            144deg,
+            var(--teal-3),
+            var(--accent-secondary)
+        );
+
+    --gradient-button-hover:
+        linear-gradient(
+            144deg,
+            var(--teal-1),
+            var(--teal-2)
+        );
+
+    --bg-primary: var(--gradient-primary);
+    --bg-secondary: #0E1416;
+    --bg-tertiary: #121A22;
+    --bg-elevated: #18222D;
+
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
