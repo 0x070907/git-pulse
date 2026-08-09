@@ -62,22 +62,66 @@
     /* buttons */
     --gradient-button:
         linear-gradient(
-            144deg,
-            var(--teal-3),
-            var(--accent-secondary)
+            135deg,
+            var(--teal-2),
+            var(--teal-3)
         );
 
     --gradient-button-hover:
         linear-gradient(
-            144deg,
-            var(--teal-1),
-            var(--teal-2)
+            135deg,
+            var(--teal-3),
+            var(--teal-4)
+        );
+
+    --gradient-button-active:
+        linear-gradient(
+            135deg,
+            var(--teal-3),
+            var(--accent-primary)
+        );
+
+    --gradient-button-secondary:
+        linear-gradient(
+            135deg,
+            rgba(29, 61, 65, 0.55),
+            rgba(67, 190, 194, 0.12)
         );
 
     --bg-primary: var(--gradient-primary);
     --bg-secondary: #0E1416;
     --bg-tertiary: #121A22;
     --bg-elevated: #18222D;
+
+    --glass-surface-1: rgba(255, 255, 255, 0.155);
+    --glass-surface-2:rgba(160, 148, 148, 0.11);
+    --glass-surface-hover: rgba(255, 255, 255, 0.09);
+
+    --glass-border:rgba(120, 208, 211, 0.22);
+    --glass-highlight: rgba(67,190,194,0.35);
+
+    --text-primary: #F5F8FC;
+    --text-secondary: #B8C3D1;
+    --text-muted: #73808D;
+    --text-disabled: #4A5562;
+    --button-text: var(--text-primary);
+
+    --border-subtle: rgba(255, 255, 255, .06);
+    --border-normal: rgba(255, 255, 255, .10);
+    --border-active: rgba(67, 190, 194, .45);
+
+
+        /* shadows */
+    --shadow-card:0 0 25px rgba(67, 190, 194, 0.097),0 0 35px rgba(67, 190, 194, 0.12);
+    --shadow-card-hover:
+        0 0 30px rgba(67, 190, 194, 0.092),
+        0 0 45px rgba(67, 190, 194, 0.20);
+
+    --shadow-button:0 4px 15px rgba(67, 190, 194, 0.30),0 0 25px rgba(67, 190, 194, 0.25);
+    --shadow-button-hover:0 6px 20px rgba(67, 190, 194, 0.40),0 0 35px rgba(120, 208, 211, 0.35);
+
+    --shadow-button-active:0 2px 10px rgba(67, 190, 194, 0.30),0 0 20px rgba(67, 190, 194, 0.25);
+
 
 }
 
@@ -86,3 +130,4 @@
   padding: 0;
   box-sizing: border-box;
 }
+
