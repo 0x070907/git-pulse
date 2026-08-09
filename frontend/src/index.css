@@ -91,14 +91,14 @@
     --bg-primary: var(--gradient-primary);
     --bg-secondary: #0E1416;
     --bg-tertiary: #121A22;
-    --bg-elevated: #18222D;
+    --bg-elevated: rgb(32, 37, 43);
 
     --glass-surface-1: rgba(255, 255, 255, 0.155);
     --glass-surface-2:rgba(160, 148, 148, 0.11);
-    --glass-surface-hover: rgba(255, 255, 255, 0.09);
+    --glass-surface-hover:var(--bg-elevated);
 
     --glass-border:rgba(120, 208, 211, 0.22);
-    --glass-highlight: rgba(67,190,194,0.35);
+    --glass-highlight: rgba(10, 205, 211, 0.523);
 
     --text-primary: #F5F8FC;
     --text-secondary: #B8C3D1;
@@ -112,16 +112,23 @@
 
 
         /* shadows */
-    --shadow-card:0 0 25px rgba(67, 190, 194, 0.097),0 0 35px rgba(67, 190, 194, 0.12);
+    --shadow-card:0 0 25px rgba(67, 190, 194, 0.097),0 0 35px rgba(67, 190, 194, 0.079);
     --shadow-card-hover:
-        0 0 30px rgba(67, 190, 194, 0.092),
-        0 0 45px rgba(67, 190, 194, 0.20);
+        0 0 30px rgba(67, 190, 194, 0.014),
+        0 0 45px rgba(67, 190, 194, 0.095);
 
     --shadow-button:0 4px 15px rgba(67, 190, 194, 0.30),0 0 25px rgba(67, 190, 194, 0.25);
     --shadow-button-hover:0 6px 20px rgba(67, 190, 194, 0.40),0 0 35px rgba(120, 208, 211, 0.35);
-
     --shadow-button-active:0 2px 10px rgba(67, 190, 194, 0.30),0 0 20px rgba(67, 190, 194, 0.25);
 
+    --card-bg: var(--bg-tertiary);
+    --card-hover-bg: var(--bg-elevated);
+    --card-border-radius: 16px;
+    --card-highlight: inset 0 1px 0 rgba(188, 237, 239, 0.08);
+
+    --input-bg: var(--bg-secondary);
+    --input-border: var(--border-subtle);
+    --input-focus: var(--accent-primary);
 
 }
 
