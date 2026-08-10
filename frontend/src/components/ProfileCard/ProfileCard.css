@@ -1,0 +1,78 @@
+.profile{
+    width: 90%;
+    max-width:700px;
+    margin:2rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+    gap:40px;
+    
+    /* position: relative;
+    left:1vw; */
+
+    font-family: var(--serif);
+    font-size: 0.5rem;
+
+    outline:none;
+    border: 2px solid var(--teal-1);
+    background: var(--glass-surface-2),url("../../assets/dashboard-bg-2.png");
+    /* background-size: contain; */
+    
+    backdrop-filter: blur(2px) saturate(1.18);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-card);
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+.profile:hover{
+        transform:translateY(-2px);
+}
+
+.avatar{
+    width:150px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+
+    box-shadow: var(--shadow-card-hover);
+}
+
+.name{
+    color:var(--teal-3);
+    font-family: var(--mono);
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+    text-shadow: 0 0 10px var(--teal-1);
+}
+
+.profile-details{
+    
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+
+    padding: 0.5rem;
+    font-family: var(--serif);
+    color:var(--text-primary);
+
+}
+
+a{
+    display: flex;
+    gap:2px;
+
+    text-decoration: none;
+
+    div,i{
+        color:var(--white-2);
+    }
+}
+
+
+
+
+
+

@@ -1,3 +1,5 @@
+// responsiveness has to be handled; animations will be added later;font-colors have to be changed 
+
 import { useState } from "react";
 import "./Dashboard.css"
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
