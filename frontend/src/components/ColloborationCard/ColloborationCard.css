@@ -1,0 +1,121 @@
+.collab-card{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+
+    width:90%;
+    max-width: 800px;
+
+    color:var(--text-primary);
+    font-family: var(--serif);
+    font-size: 1em;
+    border: 2px solid var(--teal-1);
+    background: var(--glass-surface-2),url("../../assets/dashboard-bg-2.png");
+    backdrop-filter: blur(2px) saturate(1.18);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-card);
+    
+}
+
+.collab-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem 0.5rem 1.5rem;
+    
+}
+
+.collab-status p{
+
+    font-size: 0.9em;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+.collab-status div{
+    
+    padding: 2px 5px;
+    background-color: var(--teal-1);
+    border: 1px solid var(--teal-2);
+    border-radius: 10px;
+
+    font-size:0.75em;
+    
+}
+
+.collab-breakdown-container{
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+
+    font-size:0.85em;
+    font-family: var(--serif);
+    color:var(--text-primary);
+
+    background: var(--glass-surface-2);
+    border:1px solid var(--glass-border);
+    border-radius: 10px;
+
+    margin: 2rem auto;
+    margin-top: 0;
+    transition:all 0.3s ease-in;
+}
+
+.collab-bd-cell{
+    flex: 1 1 calc(50% - 10px);
+    min-width: 140px;
+
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    color:var(--text-primary);
+
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 0.85rem 1.1rem;
+    
+    transition: all 0.3s linear;
+}
+
+.collab-bd-cell:hover {
+  background: var(--glass-surface-hover);
+  border-color: var(--border-active);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* label and icon grouping */
+.collab-label-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+
+.collab-label{
+   font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-family: var(--serif);
+}
+
+.collab-icon {
+    font-size:1.1em;
+    color:var(--teal-3);
+  filter: drop-shadow(0 0 6px rgba(47, 166, 169, 0.4));
+}
+
+
+.collab-count {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--white-1);
+
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
