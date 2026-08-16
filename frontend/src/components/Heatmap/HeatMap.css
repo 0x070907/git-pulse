@@ -1,0 +1,31 @@
+.heatmap{
+        display:flex;
+        flex-direction: column;
+        padding:20px;
+        min-width:620px;
+        flex: 1  1 10px;
+
+        border: 2px solid var(--teal-1);
+        background: var(--glass-surface-2),url("../../assets/dashboard-bg-2.png");
+        backdrop-filter: blur(2px) saturate(1.18);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-card);
+}
+
+.row{
+        flex: 1 0 10px;
+        display: flex;
+        /* gap:2px; */
+}
+.cell{
+
+        /* background-color: var(--contribution-2); */
+        width: 15px;
+        height: 15px;
+        border-radius: 5px;
+
+        margin:0.25rem;
+
+        display: inline-block;
+        border:1px solid var(--glass-border);
+}

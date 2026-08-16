@@ -1,7 +1,7 @@
 .dashboard-bg{
 
     width:100%;
-    height:200vh;
+    height:500vh;
     
 }
 
@@ -32,7 +32,7 @@
     filter: blur(1.5px);
     /* this slightly expands beyond the edges and haence the image has to be extended slightly outside the viewport/container to prevent visible blurred egdes*/
 
-    animation: floatBg 130s ease-in-out infinite alternate;
+    animation: floatBg 100s ease-in-out infinite alternate;
     will-change: transform;
 
 }
@@ -76,6 +76,24 @@
   border-radius: var(--card-border-radius);
   box-shadow: var(--shadow-card);
   
+}
+
+.collab-and-lang-breakdown{
+
+  width:90%;
+  max-width:1200px;
+
+  margin:3rem;
+
+}
+
+.heatmap{
+  width:90%;
+  max-width:1200px;
+
+  margin:3rem;
+
+
 }
 
 /* instead of animating bg-position which is not browser friendly,we'll animate the upward motion of pseudo element as it has more height than the element itself */

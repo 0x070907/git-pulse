@@ -4,6 +4,8 @@ import { useState } from "react";
 import "./Dashboard.css"
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import RepoCard from "../../components/RepoCard/RepoCard";
+import ColloborationCard from "../../components/ColloborationCard/ColloborationCard";
+import HeatMap from "../../components/Heatmap/HeatMap";
 
 export default function Dashboard({data}){
 
@@ -18,15 +20,23 @@ export default function Dashboard({data}){
 
                     {/* if no repos,display no public repos*/}
                     <section className="top-repositories">
-                        <h3 class="repos-heading">Top Repositories</h3>
+                        <h3 className="repos-heading">Top Repositories</h3>
                         <div className="repo-cards">
                             {/* if repos have same scores,then more than 5 cards are shown  */}
-                            {data.repositories.slice(5).map((repo) => (
+                            {data.repo_stats.top_repositories.map((repo) => (
                                 <RepoCard key={repo?.name} repo={repo} />
                                 ))
                             }
                         </div>
                     </section> 
+
+                    <section className="collab-and-lang-breakdown">
+                        <ColloborationCard data = {data.collaboration_score}/>
+                    </section>
+
+                    <section className="heatmap">
+                        <HeatMap data = {data.activity_insights.heatmap}/>
+                    </section>
                      
                 </div>  
             </div>
