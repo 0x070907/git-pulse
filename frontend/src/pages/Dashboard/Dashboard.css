@@ -96,6 +96,23 @@
 
 }
 
+.readme-btn-section{
+  display: flex;
+  justify-content: center;
+}
+
+.create-readme-btn{
+
+  color:var(--white-1);
+  background: var(--gradient-button);
+
+  width:max-content;
+  padding:0.5em;
+  border:1px solid var(--glass-border);
+  border-radius: 50px;
+  
+
+}
 /* instead of animating bg-position which is not browser friendly,we'll animate the upward motion of pseudo element as it has more height than the element itself */
 @keyframes floatBg {
   0% {

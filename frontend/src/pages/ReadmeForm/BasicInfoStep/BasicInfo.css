@@ -1,0 +1,66 @@
+.step-container{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+    width: 90%;
+    max-width:1200px;
+    height:100vh;
+    margin:2rem;
+    padding: 1rem 1rem;
+
+    outline:none;
+    border: 2px solid var(--teal-1);
+    background: var(--glass-surface-2),url("../../assets/dashboard-bg-2.png");
+    /* background-size: contain; */
+    
+    backdrop-filter: blur(2px) saturate(1.18);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-card);
+}
+
+.navbar{
+
+    display:flex;
+    justify-content: space-between;
+
+    margin-top: 1%;
+}
+
+.nav-btn{
+    padding: 10px;
+    display: flex;
+    gap:4px;
+    align-items: center;
+}
+
+.nav-btn,.nav-btn button {
+
+    font-size: 1rem;
+    cursor: pointer;
+    color:var(--accent-primary);
+    background: none;
+    border: none;
+}
+
+
+/* .nav-btn .arrow{
+    background: none;
+    color:var(--accent-primary);
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s linear;
+} */
+
+.nav-btn:hover{
+    outline: 1px solid var(--teal-1);
+    border-radius: 10px;  
+}
+
+.step-content{
+    color: var(--text-primary);
+    font-family: var(--mono);
+    padding:1rem;
+}
+

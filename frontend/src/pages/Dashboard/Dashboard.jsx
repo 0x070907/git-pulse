@@ -7,7 +7,7 @@ import RepoCard from "../../components/RepoCard/RepoCard";
 import ColloborationCard from "../../components/ColloborationCard/ColloborationCard";
 import HeatMap from "../../components/Heatmap/HeatMap";
 
-export default function Dashboard({data}){
+export default function Dashboard({data,handleClick}){
 
     // const [formData,setFormData] = useState(null);
 
@@ -37,6 +37,13 @@ export default function Dashboard({data}){
                     <section className="heatmap">
                         <HeatMap data = {data.activity_insights.heatmap}/>
                     </section>
+                    
+                    <div className="readme-btn-section">
+                        <button className="create-readme-btn"
+                     onClick={handleClick}>
+                        Create Readme
+                     </button>
+                    </div>
                      
                 </div>  
             </div>
